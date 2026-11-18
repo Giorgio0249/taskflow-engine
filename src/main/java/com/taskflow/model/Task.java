@@ -55,7 +55,7 @@ public class Task {
 	
 	@Override
 	public String toString() {
-		return "Task["+name+" | priority="+priority+" | status="+status+"]";
+		return String.format("Task{id=%s, name=%s, priority=%d, status=%s}", id, name, priority, status);
 	}
 	
 	public String getId() {return id;}
