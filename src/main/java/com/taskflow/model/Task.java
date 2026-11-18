@@ -53,6 +53,11 @@ public class Task {
 			this.status=TaskStatus.FAILED;
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("Task{id=%s, name=%s, priority=%d}", id, name, priority);
+	}
+	
 	public String getId() {return id;}
 	public String getName() {return name;}
 	public int getPriority() {return priority;}
